@@ -4,26 +4,28 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Criar um ponto de coleta</title>
 
    <link href=" https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 
    <link rel="stylesheet" href="styles/main.css">
    <link rel="stylesheet" href="styles/create-point.css">
-   <link rel="stylesheet" href="styles/resposive.css">
 
+   <link rel="stylesheet" href="styles/resposive.css">
+   <title>Criar um ponto de coleta</title>
 </head>
 
 <body>
+
    <div id="page-create-point">
 
       <header>
          <img src="/assets/logo.svg" alt="lago">
-         <a href="#">
+         <a href="index.html">
             <span></span>
             Voltar para home
          </a>
       </header>
+
       <form action="">
          <h1>Cadastro do Ponto de Coleta</h1>
 
@@ -41,8 +43,8 @@
                <div class="field">
                   <label for="eddress">Endereço</label>
                   <input type="text" name="eddress" required>
-
                </div>
+
                <div class="field">
                   <label for="eddress2">Numero/Complemento
                   </label>
@@ -56,6 +58,7 @@
                   <select name="uf" required>
                      <option value="">Selecione o Estado</option>
                   </select>
+
                   <input type="hidden" name="state">
                </div>
 
@@ -66,6 +69,7 @@
                   </select>
                </div>
             </div>
+
          </fieldset>
 
          <fieldset>
@@ -73,7 +77,7 @@
                <h2>Itens de coleta </h2>
             </legend>
 
-            <div class="items-grid ">
+            <div class="items-grid">
                <li data-id="1">
                   <img src="/assets/lampadas.svg" alt="lampadas">
                   <span>lâmpadas</span>
@@ -104,8 +108,11 @@
                   <span>óleo de Cozinha</span>
                </li>
             </div>
+
             <input type="hidden" name="items">
+
          </fieldset>
+
          <button type="submit">Cadastrar Ponto de Coleta</button>
       </form>
 

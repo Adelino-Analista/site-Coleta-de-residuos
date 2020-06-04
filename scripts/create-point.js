@@ -46,7 +46,7 @@ document
   .addEventListener("change", getCities)
 
 //tens de coleta
-const itemsToCollect = document.querySelectorAll("items-grid li")
+const itemsToCollect = document.querySelectorAll(".items-grid li")
 
 for (const item of itemsToCollect) {
   item.addEventListener("click", handleSelectedItem)
@@ -66,7 +66,7 @@ function handleSelectedItem(event) {
   //verificar se existem item selecinandos, se sim
   //pega os items selecinandos
 
-  const alreadySelected = selectedItems.findIndex(function item => {
+  const alreadySelected = selectedItes.findIndex(item => {
     const itemFound = item == itemId //isso sera false o true
     return itemFound
   })
@@ -74,12 +74,14 @@ function handleSelectedItem(event) {
   //se ja tiver selecinado,
   if (alreadySelected >= 0) {
     //tirar da seleçao    
-    const filteredItem = selectedItems.filter(item => {
+    const filteredItems = selectedItems.filter(item => {
       const itemIsDifferent = item != itemId //false
       return itemIsDifferent
     })
+
     selectedItems = selectedItems
-  } else {
+  }
+  else {
     selectedItems.push(itemId)
   }
 
