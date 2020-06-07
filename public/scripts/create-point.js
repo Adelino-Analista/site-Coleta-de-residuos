@@ -63,6 +63,7 @@ function handleSelectedItem(event) {
   itemLi.classList.toggle("selected")
 
   const itemId = itemLi.dataset.id
+
   //verificar se existem item selecinandos, se sim
   //pega os items selecinandos
 
@@ -85,6 +86,8 @@ function handleSelectedItem(event) {
     selectedItems.push(itemId)
   }
 
+  console.log('selectedItems:', selectedItems)
+  //atualizar a capo escondido com os itens
   collectedItems.value = selectedItems
 
 }
